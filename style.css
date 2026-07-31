@@ -1,0 +1,189 @@
+/* ============================================================
+   GLOBAL PAGE STYLING
+   ============================================================ */
+
+/* Background of the whole app */
+.stApp {
+    background-color: #f7f9fc !important;  /* light grey-blue background */
+    color: #000000 !important;
+}
+
+/* Main content container:
+   - aligned towards top-left
+   - padding 5% from top and left
+   - no strong centring */
+.block-container {
+    max-width: 90% !important;
+    margin-left: 5% !important;   /* 5% from the left edge */
+    margin-right: 0 !important;
+    padding-top: 2% !important;   /* 5% from the top */
+}
+
+/* Do NOT shrink everything: leave Streamlit widgets with default size.
+   We only control markdown text and headings below. */
+
+
+/* ============================================================
+   HEADINGS & TEXT INSIDE MARKDOWN
+   ============================================================ */
+
+/* Main title (st.title) inside markdown containers */
+[data-testid="stMarkdownContainer"] h1 {
+    font-size: 18px !important;       /* requested size */
+    font-weight: 700 !important;
+    color: #0a2a43 !important;        /* dark navy blue */
+    margin-top: 0 !important;
+    /*margin-bottom: 28px !important;*/
+}
+
+/* Other headings slightly smaller */
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3,
+[data-testid="stMarkdownContainer"] h4,
+[data-testid="stMarkdownContainer"] h5,
+[data-testid="stMarkdownContainer"] h6 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #0a2a43 !important;
+}
+
+/* Normal text inside markdown: paragraphs and bullet points */
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] li,
+[data-testid="stMarkdownContainer"] span {
+    font-size: 14px !important;       /* requested size */
+    color: #000000 !important;        /* high contrast */
+    line-height: 1.5 !important;
+}
+
+/* ============================================================
+   METRICS & CARDS (optional)
+   ============================================================ */
+
+[data-testid="stMetric"] {
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
+    border: 1px solid #d3d9e0 !important;
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 14px !important;
+    color: #000000 !important;
+}
+
+[data-testid="stMetricValue"] {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #000000 !important;
+}
+
+/* ============================================================
+   STYLE FOR TAB LABELS (Streamlit tabs)
+   ============================================================ */
+
+.stTabs [data-baseweb="tab"] {
+    padding: 12px 24px !important;  /* more padding for better separation */
+    margin-right: 8px !important;   /* space between tabs */
+}
+
+.stTabs [data-baseweb="tab"] p {
+    font-size: 18px !important;     /* larger font size */
+    font-weight: 700 !important;    /* bold */
+    color: #0a2a43 !important;      /* dark navy blue for emphasis */
+}
+
+
+/* ============================================================
+   DASHBOARD HEADER ELEMENTS
+   ============================================================ */
+
+/* Centered logo */
+.dashboard-logo {
+    text-align: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+/* Main Dashboard Title */
+.dashboard-title {
+    text-align: left !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #0a2a43 !important;   /* dark navy blue */
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+/* ============================================================
+   LABEL DISTRIBUTION TABLE STYLING
+   ============================================================ */
+
+/* ============================================
+   Styling for tables created with st.table
+   ============================================ */
+
+/* Contenitore generale della tabella */
+div[data-testid="stTable"] table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    background-color: #f5f6f8 !important;   /* sfondo grigio chiaro */
+    color: #000000 !important;              /* testo nero */
+    font-size: 14px !important;
+}
+
+/* Celle di intestazione */
+div[data-testid="stTable"] thead tr th {
+    background-color: #e1e4ea !important;   /* grigio leggermente più scuro */
+    color: #000000 !important;
+    padding: 6px 8px !important;
+    border-bottom: 1px solid #cbd0d8 !important;
+}
+
+/* Celle di intestazione */
+div[data-testid="stTable"] thead tr th p {  /* testo all'interno delle th */
+    color: #000000 !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+}
+
+/* Celle del corpo */
+div[data-testid="stTable"] tbody tr td {
+    background-color: #f5f6f8 !important;
+    color: #000000 !important;
+    padding: 6px 8px !important;
+    border-bottom: 1px solid #e0e3ea !important;
+    text-align: left !important;
+}
+
+
+/* Colonna indice (se presente) */
+div[data-testid="stTable"] tbody tr {
+    background-color: #e9ecf1 !important;
+    color: #000000 !important;
+    font-weight: 700 !important;
+    font-size: larger !important;
+    padding: 6px 8px !important;
+    border-bottom: 1px solid #e0e3ea !important;
+}
+
+
+/* ============================================================
+   FILE UPLOADER BUTTON STYLING
+   ============================================================ */
+
+/* File uploader button */
+[data-testid="stFileUploader"] button {
+    background-color: #4a90e2 !important;  /* azzurro/blue */
+    color: #000000 !important;              /* testo nero */
+    border: none !important;
+    font-weight: 600 !important;
+    padding: 8px 16px !important;
+    border-radius: 4px !important;
+}
+
+/* File uploader button hover state */
+[data-testid="stFileUploader"] button:hover {
+    background-color: #357abd !important;  /* azzurro più scuro al hover */
+    color: #000000 !important;
+}

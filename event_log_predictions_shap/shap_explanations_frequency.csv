@@ -1,0 +1,11 @@
+encoding_type;original_name;mapped_name;importance
+frequency;LABORATORY;Frequency: Laboratory;0.072
+frequency;EKG;Frequency: Ekg;0.070
+frequency;CHEST X-RAY / THORAX+LATERAL;Frequency: Chest X-Ray / Thorax+Lateral;0.050
+frequency;X-RAY;Frequency: X-Ray;0.032
+frequency;CONSULTATION;Frequency: Consultation;0.029
+frequency;CT SCAN;Frequency: Ct Scan;0.013
+frequency;BED CHEST X-RAY;Frequency: Bed Chest X-Ray;0.012
+frequency;PRE-TRANSFUSIONAL CHECKS;Frequency: Pre-Transfusional Checks;0.011
+frequency;BRAIN CT SCAN;Frequency: Brain Ct Scan;0.007
+frequency;PHYSICIAN-ASSESMENT;Frequency: Physician-Assesment;0.004

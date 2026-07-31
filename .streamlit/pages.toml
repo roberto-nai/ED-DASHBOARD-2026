@@ -1,0 +1,7 @@
+[[pages]]
+path = "app.py"
+name = "App"
+
+[[pages]]
+path = "pages/narrative_create.py"
+name = "Narrative generation"

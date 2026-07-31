@@ -1,0 +1,69 @@
+# config.yml
+
+# Page title configuration
+page_title: "VALE — Visual Analytics for Log Exploration"
+
+# Directories and file names
+# EL
+event_log_directory: "event_log"
+event_log_file: "orbassano_filtered.csv"
+event_log_dfg_dir: "event_log_dfg"
+# Narratives
+event_log_narrative_dir: "event_log_narratives"
+event_log_narrative_file: "orbassano_filtered_narratives_llama3.2.csv"
+# Predictions
+event_log_predictions_dir: "event_log_predictions"
+event_log_predictions_file: "predictions_dump_RF_frequency.csv"
+# XAI SHAP explanations
+event_log_predictions_shap_dir: "event_log_predictions_shap"
+event_log_predictions_shap_file: "shap_explanations_frequency.csv"
+
+# Narrative service (URL /narrative_create)
+narrative_service:
+  model: "llama3.2"
+  ollama_url: "http://localhost:11434/api/chat"
+  max_workers: 3
+  request_timeout_seconds: 1800
+  prompt_file: "modules/narrative_prompt.txt"
+
+# Style
+style_file: "style.css"
+
+# Column configuration for the event log
+columns:
+  case_id: "CASEID"        # Adapt this to your real case-id column
+  timestamp: "TIMESTAMP"    # Adapt this to your real timestamp column
+  activity: "ACTIVITY"      # Adapt this to your real activity column
+  label: "LABEL"            # Adapt this to your real outcome/label column
+
+# Column configuration for the narratives
+narrative_columns:
+  case_id: "caseid"        # Adapt this to your real case-id column in narratives
+  narrative: "narrative"    # Adapt this to your real narrative text column
+  label: "label"            # Adapt this to your real outcome/label column in narratives
+
+# Column configuration for the predictions
+prediction_columns:
+  case_id: "caseid"        # Adapt this to your real case-id column in predictions
+  true_outcome: "true_outcome"  # Adapt this to your real prediction column
+  predicted_outcome: "predicted_outcome" # Adapt this to your real predicted outcome column
+  prediction_probability: "prediction_probability" # Adapt this to your real probability column
+
+# XAI settings
+xai_top_features: 5
+xai_feature_col: "original_name"
+xai_importance_col: "importance"
+xai_plot_width: 12
+xai_plot_height: 6
+
+# CSV file separator
+csv_separator: ";"
+
+# Tab configuration: set to true/false to enable/disable each tab
+tabs:
+  import_event_log: true
+  global_statistics: true
+  case_view: true
+  narrative_view: true
+  outcome_prediction: true
+  xai_explanation: true

@@ -1,0 +1,26 @@
+{
+  "case_id": "2022090002",
+  "edges": [
+    {
+      "source": "TRIAGE",
+      "target": "PHYSICIAN-ASSESMENT",
+      "frequency": 1
+    },
+    {
+      "source": "PHYSICIAN-ASSESMENT",
+      "target": "LABORATORY",
+      "frequency": 1
+    },
+    {
+      "source": "LABORATORY",
+      "target": "DISCHARGE",
+      "frequency": 1
+    }
+  ],
+  "start_activities": {
+    "TRIAGE": 1
+  },
+  "end_activities": {
+    "DISCHARGE": 1
+  }
+}
