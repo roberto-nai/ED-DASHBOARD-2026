@@ -1,4 +1,4 @@
-# ED Dashboard
+# Emergency Department Dashboard
 
 Streamlit dashboard for clinical event log exploration, with modules for statistics, case exploration, narrative generation, prediction, and explainability.
 
