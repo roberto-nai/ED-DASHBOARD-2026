@@ -71,7 +71,6 @@ These folders are intentionally kept in the repository structure with `.gitkeep`
 - `modules`: core Python modules containing reusable dashboard logic (data ingestion, statistics, case view/DFG, narrative generation, prediction, XAI, and style loading).
 - `.streamlit`: Streamlit configuration files, including page navigation setup (for example, sidebar page labels/order).
 - `pages`: additional Streamlit pages beyond the main app (for example, the narrative generation service page).
-- `_old`: legacy or archived material kept for local reference and excluded from public tracking.
 
 ### Main files in the repository root
 
