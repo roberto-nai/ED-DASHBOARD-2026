@@ -54,7 +54,7 @@ To force regeneration even when the file already exists:
 
 http://localhost:8501/narrative_create?force=1
 
-## 5) Data directory overview (`event_log` and `event_log_*`)
+## 5) Data directory overview
 
 - `event_log`: stores the source event log files used as dashboard input.
 - `event_log_dfg`: stores generated Directly-Follows Graph (DFG) outputs for case exploration (for example, JSON/PNG artefacts).
@@ -64,7 +64,7 @@ http://localhost:8501/narrative_create?force=1
 
 These folders are intentionally kept in the repository structure with `.gitkeep`, while generated data files can remain local.
 
-## 6) Project structure overview (`modules`, `.streamlit`, and root files)
+## 6) Project structure overview
 
 ### Main directories
 
