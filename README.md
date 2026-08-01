@@ -4,13 +4,13 @@ Streamlit dashboard for clinical event log exploration, with modules for statist
 
 ## 1) Activate the virtual environment
 
-From the terminal, move to the project folder:
+If the virtual environment does not exist yet, create it with Python 3.10 and name it `venv310`:
 
 ```bash
-cd "/Volumes/SAMSUNG-PHD/PhD/Articoli MIEI/Knoweledge and Information System 2026 (ex ACM 2025)/ED_dashboard"
+python3.10 -m venv venv310
 ```
 
-Activate the virtual environment already included in the project:
+Then activate it from the project root:
 
 ```bash
 source venv310/bin/activate
