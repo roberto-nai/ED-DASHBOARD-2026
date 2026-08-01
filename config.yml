@@ -6,11 +6,11 @@ page_title: "VALE — Visual Analytics for Log Exploration"
 # Directories and file names
 # EL
 event_log_directory: "event_log"
-event_log_file: "orbassano_filtered.csv"
+event_log_file: "ed_filtered.csv"
 event_log_dfg_dir: "event_log_dfg"
 # Narratives
 event_log_narrative_dir: "event_log_narratives"
-event_log_narrative_file: "orbassano_filtered_narratives_llama3.2.csv"
+event_log_narrative_file: "ed_filtered_narratives_llama3.2.csv"
 # Predictions
 event_log_predictions_dir: "event_log_predictions"
 event_log_predictions_file: "predictions_dump_RF_frequency.csv"

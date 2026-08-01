@@ -192,6 +192,22 @@ dfg_*.png
 # Logs
 *.log
 
+# Keep data directories in repo, but only with .gitkeep
+event_log/*
+!event_log/.gitkeep
+
+event_log_dfg/*
+!event_log_dfg/.gitkeep
+
+event_log_narratives/*
+!event_log_narratives/.gitkeep
+
+event_log_predictions/*
+!event_log_predictions/.gitkeep
+
+event_log_predictions_shap/*
+!event_log_predictions_shap/.gitkeep
+
 # My files
 _old/
 **/_old/
